@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Jodo da Memória</title>
+</head>
+<body>
+  <h1>Jogo da Memória</h1>
+
+  <main>
+    <section class="board" id="home"> 
+      <div id="score">
+        <!-- <h2>Your score</h2>
+        <p>score</p> -->
+      </div>
+
+      <button id="new-game">Start new game</div>
+
+
+    </section>
+    <section class="board" id="game">
+      <div class="card" data-character="Dobby">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/06/2d/a7/062da7e48f4e2f65af7b3d52c57eb223.jpg" alt="Dobby">
+      </div>
+      <div class="card" data-character="Dobby">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/06/2d/a7/062da7e48f4e2f65af7b3d52c57eb223.jpg" alt="Dobby">
+      </div>
+      <div class="card" data-character="Harry">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/originals/eb/b2/88/ebb28800b5c80d00c206be1f64fc3c3c.jpg" alt="Harry">
+      </div>
+      <div class="card" data-character="Harry">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/originals/eb/b2/88/ebb28800b5c80d00c206be1f64fc3c3c.jpg" alt="Harry">
+      </div>
+      <div class="card" data-character="Ron">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/0c/bc/93/0cbc9322b7bb5553518f0cca0984a2a4.jpg" alt="Ron">
+      </div>
+      <div class="card" data-character="Ron">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/0c/bc/93/0cbc9322b7bb5553518f0cca0984a2a4.jpg" alt="Ron">
+      </div>
+      <div class="card" data-character="Hermione">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/db/a6/32/dba632c66512e20cacb8cf08e2418797.jpg" alt="Hermione">
+      </div>
+      <div class="card" data-character="Hermione">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/db/a6/32/dba632c66512e20cacb8cf08e2418797.jpg" alt="Hermione">
+      </div>
+      <div class="card" data-character="Luna">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/1d/24/48/1d24487db41c0e31844b60fb0d775604.jpg" alt="Luna">
+      </div>
+      <div class="card" data-character="Luna">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/1d/24/48/1d24487db41c0e31844b60fb0d775604.jpg" alt="Luna">
+      </div>
+      <div class="card" data-character="Hagrid">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/7a/46/0f/7a460f71b2d1942bd02445f80d54897c.jpg" alt="Hagrid">
+      </div>
+      <div class="card" data-character="Hagrid">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/7a/46/0f/7a460f71b2d1942bd02445f80d54897c.jpg" alt="Hagrid">
+      </div>
+      <div class="card" data-character="Malfoy">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/7e/fc/51/7efc51c4de90c1164412f8f1a8cfebbe.jpg" alt="Malfoy">
+      </div>
+      <div class="card" data-character="Malfoy">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/7e/fc/51/7efc51c4de90c1164412f8f1a8cfebbe.jpg" alt="Malfoy">
+      </div>
+      <div class="card" data-character="Dumbledore">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/8e/a9/6b/8ea96b4b077b5f38264592976a54db9a.jpg" alt="Dumbledore">
+      </div>
+      <div class="card" data-character="Dumbledore">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/8e/a9/6b/8ea96b4b077b5f38264592976a54db9a.jpg" alt="Dumbledore">
+      </div>
+      <div class="card" data-character="McGonagall">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/12/6e/f1/126ef11088d58e7cd18860bea192ec1e.jpg" alt="McGonagall">
+      </div>
+      <div class="card" data-character="McGonagall">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/12/6e/f1/126ef11088d58e7cd18860bea192ec1e.jpg" alt="McGonagall">
+      </div>
+      <div class="card" data-character="Voldemort">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/4d/fe/18/4dfe18123a024b112e2e608e64738b6d.jpg" alt="Voldemort">
+      </div>
+      <div class="card" data-character="Voldemort">
+        <img class="card-back" src="https://i.pinimg.com/564x/2a/18/83/2a18838ca8393ee72c1af41c93489fba.jpg" alt="Hogwarts crest">
+        <img class="card-front" src="https://i.pinimg.com/564x/4d/fe/18/4dfe18123a024b112e2e608e64738b6d.jpg" alt="Voldemort">
+      </div>
+    </section>
+  </main>
+  
+  <script src="./script.js"></script>
+</html>

@@ -1,0 +1,98 @@
+:root {
+  --title: #404242;
+  --body: #F1F3F8;
+  --game: #F1F3F8;
+  --button: #67199f42;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+}
+
+h1 {
+  font-family: Helvetica, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin: 15px;
+  color: var(--title);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.1px;
+}
+
+/* GAME */
+
+.board {
+  width: 40vw;
+  height: 85vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--game);
+  padding: 10px;
+  border-radius: 1%;
+  border: 1px solid rgba(138, 79, 79, 0.2);
+  box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  width: calc(18% - 10px);
+  height: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  backface-visibility: hidden;
+}
+
+.card-back {
+  z-index: 1;
+}
+
+.card-front {
+  transform: rotateY(180deg);
+}
+
+.card:active {
+  transform: scale(0.95);
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+
+/* HOME */
+
+#home {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+button {
+  background-color: var(--button);
+  font-family: Helvetica, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 5%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
