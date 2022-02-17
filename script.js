@@ -16,8 +16,12 @@ const lastMatch = 10;
 const cards = document.querySelectorAll('.card');
 
 function startNewGame() {
+  
+  cards.forEach(card => card.classList.remove('flipped'));
+  
   resetCards();
   shuffleCards();
+  
 
   cards.forEach(card => {
     card.addEventListener('click', handleClick);
@@ -25,6 +29,8 @@ function startNewGame() {
 
   homeElement.style.display= 'none';
   gameElement.style.display = 'flex';
+  
+  
 }
 
 // GAME FUNCTIONS
